@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    background: #ece8e1;
+}
+
+header {
+    background: url(https://lp.adstart.dev/lp/ch/hlr/valorant/images/background_desktop.webp) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+header .header_left {
+    width: 679px;
+    height: 741px;
+}
+
+header .header_left {
+    position: relative;
+    top: 66px;
+}
+
+header .header_left>img {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    padding: 0 10px;
+    max-width: 430px;
+    width: calc(100% - 20px);
+}
+
+.header_title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+.cla {
+    width: 100%;
+    margin: 0 auto;
+    background: #132536;
+    mix-blend-mode: normal;
+    border: 0.5px solid #132536;
+    box-sizing: border-box;
+    box-shadow: 0 4px 25px rgb(0 0 0 / 20%);
+    border-radius: 5px;
+}
+
+.cla_h2 {
+    background: #0c1d2d;
+    mix-blend-mode: normal;
+    padding: 12px;
+    margin-bottom: 25px;
+    position: relative;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.fade_in {
+    animation: fade 1s ease-in-out forwards;
+    animation-delay: .5s;
+    animation-fill-mode: both;
+}
+
+._inputs {
+    position: relative;
+    width: 315px;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+._inputs::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px 0 0 5px;
+    height: 100%;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: url(https://lp.adstart.dev/lp/ch/hlr/valorant/images/phone.webp) center no-repeat #f6a32a;
+    background-size: unset;
+}
+
+._inputs::after {
+    content: "";
+    background: url(https://lp.adstart.dev/lp/ch/hlr/valorant/images/vector.webp) no-repeat;
+    width: 12px;
+    height: 21px;
+    top: calc(50% - 9px);
+    left: 77px;
+    position: absolute;
+    -webkit-animation: moveRight 2s ease-in-out infinite;
+    -moz-animation: moveRight 2s ease-in-out infinite;
+    -o-animation: moveRight 2s ease-in-out infinite;
+    animation: moveRight 2s ease-in-out infinite;
+}
+
+#tel-input, .tel-input {
+    font-weight: 700;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    padding-left: 108px;
+    font-size: 22px;
+    line-height: 33px;
+    color: #353535;
+    outline: 0;
+    border: 1px solid #f6a32a;
+}
+
+.cusButton {
+    background: linear-gradient( 180deg, #fe9d43 0, #ffc940 .01%, #e86608 100%);
+    box-shadow: 0 0 5px rgb(0 0 0 / 15%);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    width: 315px;
+    max-width: calc(100% - 20px);
+    margin: 10px auto 30px;
+    padding: 15px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.text {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: move 2s ease-in-out infinite;
+}
+
+.bottom {
+    position: relative;
+}
+
+.pics {
+    padding-top: 125px;
+    max-width: 740px;
+    width: calc(100% - 20px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background_pic_min {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    animation: fade_left 1s ease-in-out forwards;
+    animation-delay: .5s;
+    animation-fill-mode: both;
+    z-index: -11111;
+}
+
+footer {
+    max-width: calc(95% - 0px);
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 1400px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0 auto;
+    padding-top: 50px;
+    color: #000;
+    text-align: justify;
+}
+
+.footer_links {
+    text-align: center;
+    padding: 20px 0;
+    z-index: 333333;
+}
+
+.footer_links a {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000;
+    text-transform: uppercase;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+@keyframes fade_left {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-5px);
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes fade {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* CSS for moblie */
+
+.main_logo_mb {
+    width: 80%;
+}
+
+.player_mb {
+    width: 100%;
+    margin-top: -4rem;
+}
+
+.text_mb {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: #fff;
+    width: 100%;
+    margin-top: -84px;
+    padding-bottom: 20px;
+    animation: move 2s ease-in-out infinite;
+}
+
+/* responsive */
+.mobile{
+    display: none;
+}
+@media screen and (max-width: 1210px) {
+    header {
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        background: url(https://lp.adstart.dev/lp/ch/hlr/valorant/images/back_mb.webp) center center no-repeat;
+        background-size: cover;
+        background-position-y: top;
+    }
+    main {
+        overflow-x: hidden;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: unset;
+    }
+    .main_logo_mb {
+        width: 65%;
+    }
+    .player_mb {
+        width: 95%;
+        margin-top: 0;
+    }
+    .text_mb {
+        animation: text_move1 2s ease-in-out infinite;
+    }
+    .cla {
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        box-shadow: 0 0 12px rgb(0 0 0 / 10%);
+    }
+    .cla_h2 {
+        background: linear-gradient( 180deg, #fdfdfd 0, #ebeff4 100%);
+        color: #353535;
+    }
+}
+
+@keyframes text_move1 {
+    0% {
+        transform: translateY(-60px);
+    }
+    50% {
+        transform: translateY(-80px);
+    }
+    100% {
+        transform: translateY(-60px);
+    }
+}
